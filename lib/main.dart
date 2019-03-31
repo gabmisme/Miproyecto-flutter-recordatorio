@@ -27,6 +27,22 @@ class _MyrecorApp extends State<MyrecorApp>{
            ),
           centerTitle: true,
         ),
+
+      body:Scaffold(
+        body: Center(
+            child: new RaisedButton(
+                  color: Colors.white,
+                  textColor: Colors.black,
+                  child: Text("MENU",style:  TextStyle(fontSize:20.0,),),
+                  onPressed: (){
+
+                  }
+            )
+        )
+
+      )
+
+
     );
   }
 }
