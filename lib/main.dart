@@ -81,7 +81,7 @@ class _MyrecorApp extends State<MyrecorApp> {
                 children: <Widget>[
                   new Row(
                        children: <Widget>[
-                         //AssetImage('assets/imagenes/pic_house.jpg',),
+                         new Image.asset('assets/imagenes/pic_house.jpg'),
 
                        ],
                   )
