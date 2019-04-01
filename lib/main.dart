@@ -10,6 +10,7 @@ class MyrecorApp extends StatefulWidget {
   @override
   _MyrecorApp createState() => new _MyrecorApp();
 }
+
 class _MyrecorApp extends State<MyrecorApp> {
   @override
   Widget build(BuildContext context) {
@@ -26,17 +27,16 @@ class _MyrecorApp extends State<MyrecorApp> {
       ),
 
       body: Scaffold(
-        body: Container(
-          //color: Color(0xFF673AB7),
-          child: new Column(
 
+        body: Container(
+
+          color: Color(0x6D28AA00),
+          child: new Column(
             //mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
           Row(
-
              mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: <Widget>[
-
                   new RaisedButton(
                       padding: const EdgeInsets.all(0.90),//
                       color: Colors.black,
@@ -49,7 +49,7 @@ class _MyrecorApp extends State<MyrecorApp> {
                       ),
                       onPressed: () {}),
                   new RaisedButton(
-                      padding: const EdgeInsets.all(0.90),//
+                      padding: const EdgeInsets.all(0.50),//
                       color: Colors.black,
                       textColor: Colors.white,
                       child: Text(
@@ -74,6 +74,22 @@ class _MyrecorApp extends State<MyrecorApp> {
                 ],
 
               ),
+          //nuevo contenido
+          new Container(
+            color: Color(0x45DD21EE),
+            child: new Column(
+                children: <Widget>[
+                  new Row(
+                       children: <Widget>[
+                         //AssetImage('assets/imagenes/pic_house.jpg',),
+
+                       ],
+                  )
+                  ],
+                ),
+
+                ),
+              //fin de subcontenido
             ],
           ),
         ),
