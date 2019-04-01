@@ -11,6 +11,26 @@ class MyrecorApp extends StatefulWidget {
   _MyrecorApp createState() => new _MyrecorApp();
 }
 
+//navegador
+class SecondScreen extends StatelessWidget{
+  @override
+  Widget build(BuildContext context) {
+       return Scaffold(
+       appBar:AppBar(
+          title: Text("volver"),
+       ),
+      body:Center(
+          child: RaisedButton(onPressed:(){
+              Navigator.pop(context);
+          },
+          child: Text('volver')),
+      ),
+    );
+  }
+  
+}
+
+
 class _MyrecorApp extends State<MyrecorApp> {
   @override
   Widget build(BuildContext context) {
@@ -30,11 +50,23 @@ class _MyrecorApp extends State<MyrecorApp> {
 
         body: Container(
 
-          color: Color(0x6D28AA00),
+           /* decoration:new BoxDecoration(
+              image: new DecorationImage(
+                  image: new AssetImage("assets/imagenes/pic_house.jpg"),
+              fit: BoxFit.cover,
+              ),
+            ),
+*/
+
+          //color: Color(0x6D28AA00),
           child: new Column(
+
             //mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
+
           Row(
+
+
              mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: <Widget>[
                   new RaisedButton(
@@ -47,7 +79,7 @@ class _MyrecorApp extends State<MyrecorApp> {
                           fontSize: 15.0,
                         ),
                       ),
-                      onPressed: () {}),
+                      onPressed: () {},),
                   new RaisedButton(
                       padding: const EdgeInsets.all(0.50),//
                       color: Colors.black,
@@ -58,7 +90,12 @@ class _MyrecorApp extends State<MyrecorApp> {
                           fontSize: 15.0,
                         ),
                       ),
-                      onPressed: () {}),
+                      onPressed: () {
+                        Navigator.push(context,
+                          MaterialPageRoute(builder:
+                              (context)=> SecondScreen()),
+                        );
+                      },),
 
                   new RaisedButton(
                       padding: const EdgeInsets.all(0.90),//
@@ -70,30 +107,21 @@ class _MyrecorApp extends State<MyrecorApp> {
                           fontSize: 15.0,
                         ),
                       ),
-                      onPressed: () {}),
+                      onPressed: () {
+                           Navigator.push(context,
+                              MaterialPageRoute(builder:
+                              (context)=> SecondScreen()),
+                           );
+                      },
+                      ),
                 ],
 
               ),
-          //nuevo contenido
-          new Container(
-            color: Color(0x45DD21EE),
-            child: new Column(
-                children: <Widget>[
-                  new Row(
-                       children: <Widget>[
-                         new Image.asset('assets/imagenes/pic_house.jpg'),
 
-                       ],
-                  )
-                  ],
-                ),
-
-                ),
-              //fin de subcontenido
-            ],
+           ],
           ),
         ),
       ),
-    );
+   );
   }
 }
