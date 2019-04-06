@@ -29,14 +29,15 @@ class MyrecorApp extends StatelessWidget {
 */
 
           //color: Color(0x6D28AA00),
-          child: new Column(
 
+          /****************************************************/
+          child: new Stack(
+            children: <Widget>[
+              /**************************columna de botones******************/
+              new Column(
             //mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
-
               Row(
-
-
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: <Widget>[
                   new RaisedButton(
@@ -85,11 +86,39 @@ class MyrecorApp extends StatelessWidget {
                     },
                   ),
                 ],
-
               ),
-
             ],
           ),
+
+              /**************************fin columna de botones******************/
+              /********************************decoracion***********************************/
+              //linea de decoracion
+              Positioned(
+                left:0.0,
+                right:0.0,
+                top:65.0,
+                child: SizedBox(
+                  width:500.0,
+                  height:5.0,
+                  child: Container(color:Colors.black),
+                ),
+              ),
+              //barra inferior
+              Positioned(
+                left:0.0,
+                right:0.0,
+                top:818.0,
+                child: SizedBox(
+                  width:500.0,
+                  height:60.0,
+                  child: Container(color:Colors.black54),
+                ),
+              ),
+              /*********************************fin decoracion******************************/
+
+
+           ],
+         ),
         ),
       ),
     );
