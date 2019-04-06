@@ -21,7 +21,7 @@ class SecondScreen extends StatelessWidget{
 
     child: Stack(
     children:[
-      //boton guardar
+      //posicion de boton guardar
       Positioned(
         left:120.0,
         //right:200.0,
@@ -38,6 +38,33 @@ class SecondScreen extends StatelessWidget{
               textColor: Colors.white,
               child: Text(
                 "GUARDAR",
+                style: TextStyle(
+                  fontSize: 15.0,
+                ),
+              ),
+              onPressed: () {},),
+            //*****************/
+          ),
+        ),
+      ),
+
+      //posicion de boton cancelar
+      Positioned(
+        // left:100.0,
+        right:120.0,
+        top:15.0,
+        child: SizedBox(
+          width: 100.0,
+          height: 40.0,
+          child: Container(
+            //color: Colors.amber,
+            /*************************/
+            child: new RaisedButton(
+              padding: const EdgeInsets.all(0.90),//
+              color: Colors.black,
+              textColor: Colors.white,
+              child: Text(
+                "CANCELAR",
                 style: TextStyle(
                   fontSize: 15.0,
                 ),
