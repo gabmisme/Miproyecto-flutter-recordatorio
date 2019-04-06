@@ -20,7 +20,17 @@ class SecondScreen extends StatelessWidget{
         body:Container(
     child: Stack(
     children:[
-
+      //linea de decoracion
+      Positioned(
+        left:0.0,
+        right:0.0,
+        top:50.0,
+        child: SizedBox(
+          width:500.0,
+          height:5.0,
+          child: Container(color:Colors.black),
+        ),
+      ),
 
 
               ],
