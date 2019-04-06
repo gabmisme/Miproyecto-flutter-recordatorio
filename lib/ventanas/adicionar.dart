@@ -42,8 +42,24 @@ class SecondScreen extends StatelessWidget{
           child: Container(color:Colors.black54),
         ),
       ),
+      //boton centrado y cosicionado regresar a inicio
+      Positioned(
+        left:25.0,
+        top: 800.0,
+        width:100.0,
+        height:100.0,
+        child: Container(
+          //boton centrado
+          child:Center(
+            child: RaisedButton(onPressed:(){
+              Navigator.pop(context);
+            },
+                child: Text('inicio')),
+          ),
+        ),
+      ),
 
-              ],
+        ],
 
            ),
           ),
