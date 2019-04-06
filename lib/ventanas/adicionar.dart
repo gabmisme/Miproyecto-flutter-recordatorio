@@ -18,13 +18,41 @@ class SecondScreen extends StatelessWidget{
         //colores y separadores
         body:Scaffold(
         body:Container(
+
     child: Stack(
     children:[
+      //boton guardar
+      Positioned(
+        left:120.0,
+        //right:200.0,
+        top:15.0,
+        child: SizedBox(
+          width: 100.0,
+          height: 40.0,
+          child: Container(
+            //color: Colors.amber,
+            /*************************/
+            child: new RaisedButton(
+              padding: const EdgeInsets.all(0.90),//
+              color: Colors.black,
+              textColor: Colors.white,
+              child: Text(
+                "GUARDAR",
+                style: TextStyle(
+                  fontSize: 15.0,
+                ),
+              ),
+              onPressed: () {},),
+            //*****************/
+          ),
+        ),
+      ),
+
       //linea de decoracion
       Positioned(
         left:0.0,
         right:0.0,
-        top:50.0,
+        top:65.0,
         child: SizedBox(
           width:500.0,
           height:5.0,
@@ -42,7 +70,7 @@ class SecondScreen extends StatelessWidget{
           child: Container(color:Colors.black54),
         ),
       ),
-      //boton centrado y cosicionado regresar a inicio
+      //boton centrado y posicionado regresar a inicio
       Positioned(
         left:25.0,
         top: 800.0,
@@ -53,13 +81,12 @@ class SecondScreen extends StatelessWidget{
           child:Center(
             child: RaisedButton(onPressed:(){
               Navigator.pop(context);
-            },
+               },
                 child: Text('inicio')),
+            ),
           ),
         ),
-      ),
-
-        ],
+      ],
 
            ),
           ),
