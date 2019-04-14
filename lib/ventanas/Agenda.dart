@@ -62,6 +62,24 @@ class SecondScreenAgenda extends StatelessWidget{
                   child: Container(color:Colors.black87),
                 ),
               ),
+
+              //boton  posicionado inicio
+              Positioned(
+                left:25.0,
+                top: 820.0,
+                width:100.0,
+                height:65.0,
+                child: Container(
+                  child: ListView(
+                    children:<Widget>[
+                      ListTile(
+                        title: Text('Inicio',style: TextStyle(color:Colors.blue,fontSize:25.0),),
+                        onTap:(){Navigator.pop(context);},
+                      ),
+                    ],
+                  ),
+                ),
+              ),
 /**************************************fin decoracion****************************/
 
             ],
