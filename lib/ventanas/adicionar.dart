@@ -245,6 +245,30 @@ class SecondScreen extends StatelessWidget{
         ),
       ),
 
+      //Texto mas opciones
+      Positioned(
+        left:150.0,
+        right:0.0,
+        top:440.0,
+        child: SizedBox(
+          width:100.0,
+          height:50.0,
+          child: Container(
+            child: ListView(
+              children:<Widget>[
+                ListTile(
+                  title: Text('Mas Opciones',style: TextStyle(color:Colors.black,fontSize:25.0),),
+                  //onTap:(){Navigator.pop(context);},
+                  onTap:(){
+
+                  },
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+
 
       //barra inferior
       Positioned(
