@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:recordatorio_glm/ventanas/adicionar.dart';
 import 'package:recordatorio_glm/ventanas/Agenda.dart';
+import 'package:recordatorio_glm/ventanas/PanelDesplegable.dart';
 //ventana principal
 class MyrecorApp extends StatelessWidget {
   @override
@@ -60,7 +61,13 @@ class MyrecorApp extends StatelessWidget {
                         fontSize: 15.0,
                       ),
                     ),
-                    onPressed: () {},),
+                    onPressed: () {
+
+                      Navigator.push(context,
+                        MaterialPageRoute(builder:
+                            (context)=>MyDrawer()),);
+
+                    },),
                   new RaisedButton(
                     padding: const EdgeInsets.all(0.50),//
                     color: Colors.black,
