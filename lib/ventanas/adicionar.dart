@@ -5,6 +5,7 @@ class SecondScreen extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+/**************************************************/
       appBar: AppBar(
         elevation: 0.0,
         title: Text(
@@ -15,13 +16,15 @@ class SecondScreen extends StatelessWidget{
         // backgroundColor: new Color(0xFF673AB7),
         //centerTitle: true,
       ),
+/**************************************************/
         //colores y separadores
-        body:Scaffold(
+  body:Scaffold(
+    backgroundColor: Colors.white,
         body:Container(
-
     child: Stack(
     children:[
-      //posicion de boton guardar
+/*********************************************boton****************************/
+      //boton guardar
       Positioned(
         left:120.0,
         //right:200.0,
@@ -48,7 +51,7 @@ class SecondScreen extends StatelessWidget{
         ),
       ),
 
-      //posicion de boton cancelar
+      //boton cancelar
       Positioned(
         // left:100.0,
         right:120.0,
@@ -74,7 +77,8 @@ class SecondScreen extends StatelessWidget{
           ),
         ),
       ),
-
+/****************************fin boton****************************************/
+      /***********************************decoradores*****************************/
       //linea de decoracion
       Positioned(
         left:0.0,
@@ -86,6 +90,36 @@ class SecondScreen extends StatelessWidget{
           child: Container(color:Colors.black),
         ),
       ),
+
+      //texto de entrada
+      Positioned(
+        left:50.0,
+        right:250.0,
+        top:150.0,
+        child: SizedBox(
+          width:100.0,
+          height:35.0,
+          child: Container(
+            color: Colors.grey,
+            padding:EdgeInsets.only(left:2.0,top:0.0),
+            child: TextField(
+              cursorColor:Colors.black,
+              decoration:InputDecoration(
+                border:InputBorder.none,hintText:'Escriba su Actividad',
+                hintStyle:TextStyle(fontSize:20.0,color:Colors.black),
+              ),
+            ),
+            /*
+                 child: TextFormField(
+                   decoration:InputDecoration(
+                       border:InputBorder.none,hintText:'Titulo',
+                     ),
+                    ),
+                    */
+          ),
+        ),
+      ),
+
       //barra inferior
       Positioned(
         left:0.0,
