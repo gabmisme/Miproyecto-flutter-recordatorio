@@ -20,7 +20,27 @@ class SecondScreenAgenda extends StatelessWidget{
         body:Container(
           child: new Stack(
             children: [
-              
+/***************************************decoracion****************************/
+              //Texto Mi Agenda
+              Positioned(
+                left:150.0,
+                right:0.0,
+                top:20.0,
+                child: SizedBox(
+                  width:100.0,
+                  height:2.0,
+                  child: Container(
+                    child:Text('Mi Agenda',
+                      style: TextStyle(
+                        fontSize: 28.0,color:Colors.black,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+
+/**************************************fin decoracion****************************/
+
             ],
           ),
         ),
