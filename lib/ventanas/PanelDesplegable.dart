@@ -13,6 +13,19 @@ class MyDrawer extends StatelessWidget{
         child:new Stack(
           children: <Widget>[
 
+            /**********************************decoradores*************************************/
+            //barra superior
+            Positioned(
+              left:0.0,
+              right:0.0,
+              top:25.0,
+              child: SizedBox(
+                width:500.0,
+                height:60.0,
+                child: Container(color:Colors.black54),
+              ),
+            ),
+
           ],
         ),
       ),
