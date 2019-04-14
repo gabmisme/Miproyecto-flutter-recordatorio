@@ -168,6 +168,21 @@ class SecondScreen extends StatelessWidget{
         ),
       ),
 
+      //linea decoracion celeste
+      Positioned(
+        left:50.0,
+        right:250.0,
+        top:189.0,
+        child: SizedBox(
+          width:100.0,
+          height:2.0,
+          child: Container(
+            color:Colors.blue,
+          ),
+        ),
+      ),
+
+
       //barra inferior
       Positioned(
         left:0.0,
