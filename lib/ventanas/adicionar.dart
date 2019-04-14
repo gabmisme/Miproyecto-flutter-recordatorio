@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:recordatorio_glm/ventanas/MasOpciones.dart';
 
 class SecondScreen extends StatelessWidget{
   @override
@@ -260,6 +260,10 @@ class SecondScreen extends StatelessWidget{
                   title: Text('Mas Opciones',style: TextStyle(color:Colors.black,fontSize:25.0),),
                   //onTap:(){Navigator.pop(context);},
                   onTap:(){
+
+                    Navigator.push(context,
+                      MaterialPageRoute(builder:
+                          (context)=>MyDrawer01()),);
 
                   },
                 ),
