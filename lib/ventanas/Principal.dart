@@ -15,25 +15,34 @@ class MyrecorApp extends StatelessWidget {
         // backgroundColor: new Color(0xFF673AB7),
         //centerTitle: true,
       ),
-
       body: Scaffold(
-
+        backgroundColor: Colors.white,
         body: Container(
-
-          /* decoration:new BoxDecoration(
-              image: new DecorationImage(
-                  image: new AssetImage("assets/imagenes/pic_house.jpg"),
-              fit: BoxFit.cover,
-              ),
-            ),
-*/
-
-          //color: Color(0x6D28AA00),
-
-          /****************************************************/
           child: new Stack(
             children: <Widget>[
-              /**************************columna de botones******************/
+/******************************imagen-de-fondo********************************/
+              Positioned(
+                left:10.0,
+                right:10.0,
+                top:80.0,
+                child: SizedBox(
+                  width:900.0,
+                  height:1200.0,
+                  child: Container(
+                    //padding:EdgeInsets.only(top:100),
+                    decoration:new BoxDecoration(
+                      image: DecorationImage(
+                        image: AssetImage("assets/imagenes/pic_housefondo.jpg"),
+                        fit: BoxFit.contain,
+                        alignment: Alignment.topCenter,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+   /******************************fin-imagen-de-fondo********************************/
+
+  /**************************columna de botones******************/
               new Column(
             //mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
@@ -62,10 +71,6 @@ class MyrecorApp extends StatelessWidget {
                       ),
                     ),
                     onPressed: () {
-                      Navigator.push(context,
-                        MaterialPageRoute(builder:
-                            (context)=> SecondScreen()),
-                      );
                     },),
 
                   new RaisedButton(
@@ -111,7 +116,7 @@ class MyrecorApp extends StatelessWidget {
                 child: SizedBox(
                   width:500.0,
                   height:60.0,
-                  child: Container(color:Colors.black54),
+                  child: Container(color:Colors.black87),
                 ),
               ),
               /*********************************fin decoracion******************************/
