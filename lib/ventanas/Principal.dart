@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:recordatorio_glm/ventanas/adicionar.dart';
+import 'package:recordatorio_glm/ventanas/Agenda.dart';
 //ventana principal
 class MyrecorApp extends StatelessWidget {
   @override
@@ -71,6 +72,10 @@ class MyrecorApp extends StatelessWidget {
                       ),
                     ),
                     onPressed: () {
+                      Navigator.push(context,
+                        MaterialPageRoute(builder:
+                            (context)=>SecondScreenAgenda()),);
+
                     },),
 
                   new RaisedButton(
@@ -138,8 +143,6 @@ class MyrecorApp extends StatelessWidget {
                 ),
               ),
  /*********************************fin decoracion******************************/
-
-
            ],
          ),
         ),
