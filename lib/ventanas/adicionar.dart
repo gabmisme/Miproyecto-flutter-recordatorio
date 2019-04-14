@@ -297,15 +297,33 @@ class SecondScreen extends StatelessWidget{
               ),
             ],
           ),
-
         ),
         ),
-      ],
 
-           ),
+      //Texto desarrollador
+      Positioned(
+        //left:150.0,
+        right:15.0,
+        top:840.0,
+        child: SizedBox(
+          width:200.0,
+          height:20.0,
+          child: Container(
+            child:Text('Desarrollador-Gabriel Limachi Misme',
+              style: TextStyle(
+                fontSize: 12.0,color:Colors.blue,
+              ),
+            ),
           ),
         ),
+      ),
+      /***********************************decoradores*****************************/
 
+
+        ],
+       ),
+      ),
+     ),
     );
   }
 }
