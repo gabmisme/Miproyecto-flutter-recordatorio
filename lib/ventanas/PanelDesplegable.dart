@@ -45,6 +45,73 @@ class MyDrawer extends StatelessWidget{
             ),
             /******************fin-de-decoradores*******************/
 
+            /*************************menu******************************/
+            //menu-lista desplegable
+            Positioned(
+              left:20.0,
+              right:25.0,
+              top:100.0,
+              child: SizedBox(
+                width:400.0,
+                height:600.0,
+                child: Container(
+                  /*****************listadetexto***********************/
+                  child: ListView(
+                    //padding: EdgeInsets.zero,
+                    children: <Widget>[
+                      /*
+                          new DrawerHeader(
+                          child: Text('OPCIONES',style: TextStyle(fontSize:20.0,color:Colors.black),),
+                          decoration: BoxDecoration(
+                            color: Colors.blue,
+                          ),
+                           ),
+                        */
+                      ListTile(
+                        title: Text('DIA',style: TextStyle(color:Colors.white,fontSize:20.0),),
+                        onTap:(){},
+                      ),
+                      ListTile(
+                        title: Text('SEMANA',style: TextStyle(color:Colors.white,fontSize:20.0),),
+                        onTap:(){},
+                      ),
+                      ListTile(
+                        title: Text('MES',style: TextStyle(color:Colors.white,fontSize:20.0),),
+                        onTap:(){},
+                      ),
+                      ListTile(
+                        title: Text('AÑO',style: TextStyle(color:Colors.white,fontSize:20.0),),
+                        onTap:(){},
+                      ),
+                      ListTile(
+                        title: Text('AGENDA',style: TextStyle(color:Colors.white,fontSize:20.0),),
+                        onTap:(){
+                          Navigator.push(context,
+                            MaterialPageRoute(builder:
+                                (context)=>SecondScreenAgenda()),);
+
+                        },
+                      ),
+
+                      ListTile(
+                        title: Text('SALIR',style: TextStyle(color:Colors.blue,fontSize:20.0),),
+                        onTap:(){Navigator.pop(context);},
+                      ),
+                      /*
+                             Ink(
+                               //color: Colors.blue,
+                               child: new ListTile(title: Text('Linck'),),
+                             ),
+                            */
+                    ],
+                  ),
+                  /*****************finlistadetexto***********************/
+                  /************************************/
+                ),
+              ),
+            ),
+            /*************************menu******************************/
+
           ],
         ),
       ),
