@@ -182,6 +182,69 @@ class SecondScreen extends StatelessWidget{
         ),
       ),
 
+      //Texto inicio
+      Positioned(
+        left:25.0,
+        right:0.0,
+        top:300.0,
+        child: SizedBox(
+          width:100.0,
+          height:2.0,
+          child: Container(
+            child:Text('Inicio',
+              style: TextStyle(
+                fontSize: 28.0,color:Colors.blue,
+              ),
+            ),
+          ),
+        ),
+      ),
+      //Texto final
+      Positioned(
+        left:25.0,
+        right:0.0,
+        top:380.0,
+        child: SizedBox(
+          width:100.0,
+          height:2.0,
+          child: Container(
+            child:Text('Final',
+              style: TextStyle(
+                fontSize: 28.0,color:Colors.blue,
+              ),
+            ),
+          ),
+        ),
+      ),
+
+      //linea decoracion celeste - inicio
+      Positioned(
+        left:0.0,
+        right:0.0,
+        top:340.0,
+        child: SizedBox(
+          width:100.0,
+          height:2.0,
+          child: Container(
+            color:Colors.blue,
+          ),
+        ),
+      ),
+
+      //linea decoracion - final
+      Positioned(
+        left:0.0,
+        right:0.0,
+        top:420.0,
+        child: SizedBox(
+          width:100.0,
+          height:2.0,
+          child: Container(
+            color:Colors.blue,
+          ),
+        ),
+      ),
+
 
       //barra inferior
       Positioned(
