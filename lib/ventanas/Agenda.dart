@@ -39,6 +39,17 @@ class SecondScreenAgenda extends StatelessWidget{
                 ),
               ),
 
+              //linea de decoracion color negro
+              Positioned(
+                left:0.0,
+                right:0.0,
+                top:65.0,
+                child: SizedBox(
+                  width:500.0,
+                  height:5.0,
+                  child: Container(color:Colors.black),
+                ),
+              ),
 /**************************************fin decoracion****************************/
 
             ],
