@@ -120,6 +120,18 @@ class SecondScreen extends StatelessWidget{
         ),
       ),
 
+      //barra rectangulo-fecha
+      Positioned(
+        left:200.0,
+        // right:0.0,
+        top:300.0,
+        child: SizedBox(
+          width:120.0,
+          height:30.0,
+          child: Container(color:Colors.grey),
+        ),
+      ),
+
       //barra inferior
       Positioned(
         left:0.0,
