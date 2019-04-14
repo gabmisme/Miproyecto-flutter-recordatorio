@@ -270,7 +270,7 @@ class SecondScreen extends StatelessWidget{
       ),
 
 
-      //barra inferior
+      //barra inferior color plomo
       Positioned(
         left:0.0,
         right:0.0,
@@ -278,24 +278,27 @@ class SecondScreen extends StatelessWidget{
         child: SizedBox(
           width:500.0,
           height:60.0,
-          child: Container(color:Colors.black54),
+          child: Container(color:Colors.black87),
         ),
       ),
-      //boton centrado y posicionado regresar a inicio
+
+      //boton centrado y posicionado inicio
       Positioned(
         left:25.0,
-        top: 800.0,
+        top: 820.0,
         width:100.0,
-        height:100.0,
+        height:65.0,
         child: Container(
-          //boton centrado
-          child:Center(
-            child: RaisedButton(onPressed:(){
-              Navigator.pop(context);
-               },
-                child: Text('inicio')),
-            ),
+          child: ListView(
+            children:<Widget>[
+              ListTile(
+                title: Text('Inicio',style: TextStyle(color:Colors.blue,fontSize:25.0),),
+                onTap:(){Navigator.pop(context);},
+              ),
+            ],
           ),
+
+        ),
         ),
       ],
 
