@@ -50,6 +50,18 @@ class SecondScreenAgenda extends StatelessWidget{
                   child: Container(color:Colors.black),
                 ),
               ),
+
+              //barra inferior color plomo
+              Positioned(
+                left:0.0,
+                right:0.0,
+                top:818.0,
+                child: SizedBox(
+                  width:500.0,
+                  height:60.0,
+                  child: Container(color:Colors.black87),
+                ),
+              ),
 /**************************************fin decoracion****************************/
 
             ],
